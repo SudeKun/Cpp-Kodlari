@@ -1,2 +1,3 @@
-# CppCodes
-I want to upload easy and normal cpp codes.
+# Cpp Kodları
++Zorlandığım veya orta zorlukta olan c++ kodlarını burada paylaşacağım. 
++İsterseniz "branches" bölümünden inceleyebilirsiniz.
