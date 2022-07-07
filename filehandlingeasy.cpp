@@ -3,20 +3,20 @@
 #include <string>
 using namespace std;
 
-void file_o(fstream *file){
+void dosya_ac(fstream *file){
     file->open("file1.txt", ios::out);
     if(!*file) cout<<"Fail"<<endl;
     else cout<<"Sucsessful"<<endl;
     file->close();
 }
 
-void file_w(fstream *file,string sen){
+void dosya_yaz(fstream *file,string sen){
     file->open("file1.txt");
     *file<<sen;
     file->close();
 }
 
-void file_r(fstream *file){
+void dosya_oku(fstream *file){
     file->open("file1.txt",ios::in);
     if(!*file) cout<<"No File"<<endl;
     else{
@@ -33,11 +33,11 @@ int main(){
 
     fstream dosya;
     string sen;
-    file_o(&dosya);
+    dosya_ac(&dosya);
     cout<<"What do you want to write:";
     getline(cin,sen);
-    file_w(&dosya,sen);
-    file_r(&dosya);
+    dosya_yaz(&dosya,sen);
+    dosya_oku(&dosya);
     getchar();
     return 0;
 }
